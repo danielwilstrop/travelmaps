@@ -16,7 +16,7 @@ const Header = () => {
         </Typography>
         <Box display='flex'>
           <Typography variant='h6' className={classes.title}>
-            Explore the world, one attraction and restaurant at a time
+            Explore the World, One Attraction, Hotel and Restaurant at a time
           </Typography>
           {/* <Autocomplete> */}
           <div className={classes.search}>

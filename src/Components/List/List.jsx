@@ -49,7 +49,7 @@ const List = () => {
 
   return (
     <div className={classes.container}>
-      <Typography variant='h4'>Hotels, Attractions and Restaurants</Typography>
+      <Typography variant='h4'>What are you looking for?</Typography>
       <FormControl className={classes.formControl}>
         <InputLabel id='type'>Type</InputLabel>
         <Select
