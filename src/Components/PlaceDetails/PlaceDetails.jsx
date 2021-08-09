@@ -11,14 +11,16 @@ import {
 } from '@material-ui/core'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import Phone from '@material-ui/icons/Phone'
-import Rating from '@material-ui/lab/rating'
+import Rating from '@material-ui/lab/Rating'
 import DefaultPhoto from '../../Resources/restaurantPlaceholder.jpg'
 
 import useStyles from './Styles'
 
-const PlaceDetails = ({ place }) => {
+const PlaceDetails = ({ place, selected, refProp }) => {
   const classes = useStyles()
-  console.log(place)
+
+  if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth' })
+
   return (
     <>
       {place?.name && (
@@ -32,6 +34,14 @@ const PlaceDetails = ({ place }) => {
             <Typography gutterBottom varint='h5'>
               {place.name}
             </Typography>
+            {place.rating ? (
+              <Box display='flex' justifyContent='space-between'>
+                <Rating size='small' value={Number(place.rating)} readOnly />
+                <Typography gutterBottom variant='subtitle1'>
+                  from {place.num_reviews} reviews{' '}
+                </Typography>
+              </Box>
+            ) : null}
             {place.price ? (
               <Box display='flex' justifyContent='space-between'>
                 <Typography variant='subtitle1'>Price: </Typography>
