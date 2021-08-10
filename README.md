@@ -13,4 +13,3 @@ This code and app doesnt have soem best practises, the whole thing could ideally
 
 ![screenshot](screenshot3.png)
 ![screenshot](screenshot2.png)
-![screenshot](screenshot1.png)
