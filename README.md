@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live site hosted at
+
+[Travel Maps](https://travelmapsdan.netlify.app/)
+
 ## To run the app
 
 - Input your API keys for google and rapid API as ENV
