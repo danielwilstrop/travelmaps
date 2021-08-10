@@ -44,7 +44,7 @@ const Map = ({
                 lat={Number(place.latitude)}
                 lng={Number(place.longitude)}
                 key={i}>
-                {isDesktop ? (
+                {!isDesktop ? (
                   <LocationOnOutlinedIcon color='primary' fontSize='large' />
                 ) : (
                   <Paper elevation={3} className={classes.paper}>

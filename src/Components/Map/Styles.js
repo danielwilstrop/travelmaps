@@ -17,6 +17,8 @@ export default makeStyles(() => ({
     transform: 'translate(-50%, -50%)',
     zIndex: 1,
     '&:hover': { zIndex: 2 }
+    // height: '1vh',
+    // width: '1vw'
   },
   pointer: {
     cursor: 'pointer'
