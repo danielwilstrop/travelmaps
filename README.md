@@ -11,6 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Learning to use google maps and the places API for autocomplete in react. Suprisingly easy to do.
 This code and app doesnt have soem best practises, the whole thing could ideally do with redux or useContext as I had to lift the state on several occassions but it works and for the purpose of learning which the project was about it is acceptable to me.
 
-![screenshot](screenshot1.png)
-![screenshot](screenshot2.png)
 ![screenshot](screenshot3.png)
+![screenshot](screenshot2.png)
+![screenshot](screenshot1.png)
