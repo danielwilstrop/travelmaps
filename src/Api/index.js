@@ -15,13 +15,33 @@ export const getPlacesData = async (type, sw, ne) => {
           currency: 'GBP'
         },
         headers: {
-          'x-rapidapi-key':
-            '606dff5d6fmshb604f602b55f55cp11947djsnf08462c27ea3',
+          'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI,
           'x-rapidapi-host': 'travel-advisor.p.rapidapi.com'
         }
       }
     )
 
+    return data
+  } catch (error) {
+    console.log(error.message)
+  }
+}
+
+export const getWeatherData = async (lat, lng) => {
+  try {
+    const { data } = await axios.get(
+      'https://community-open-weather-map.p.rapidapi.com/find',
+      {
+        params: {
+          lon: lng,
+          lat: lat
+        },
+        headers: {
+          'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI,
+          'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com'
+        }
+      }
+    )
     return data
   } catch (error) {
     console.log(error.message)
